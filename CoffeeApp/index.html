@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<h1>Coffee Orders</h1>
+		<p>Order your coffee here! </p>
+	</header>
+<!-- This makes the options for how much money you have. -->
+	<center>
+		<label>Money: </label>
+    <select id="Money">
+      <option value="$5 or more">$5 or more</option>
+      <option value="Less $5">Less $5</option>
+    
+    </select>
+    <br>
+    <br>
+<!-- this gives the option for what age you are. -->
+    <label>Age: </label>
+    <select id="Age">
+      <option value="Older than 13">Older than 13</option>
+      <option value="Between 8 & 13">Between 8 & 13</option>
+      <option value="Under 8">Under 8</option>
+    </select>
+    <br><br>
+<!-- this calls the function when you click the order button. -->
+    <button onclick="updateScreen()">Order</button>
+
+    <div class="outputBox">
+      <h2>Reciept</h2>
+  	  
+		  <p id="output"> </p>
+	  </div>
+
+  </center>
+  <!-- This tells us that what is on html relates to what is on script.js -->
+    <script src="script.js"></script>
+  </body>
+</html>
